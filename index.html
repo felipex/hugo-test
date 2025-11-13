@@ -32,7 +32,7 @@ while (true)
   <script>
     fetch("https://felipex.github.io/README.md")
       .then((resp) => {
-        document.getElementById('conteudo').innerHTML = resp.text;
+        document.getElementById('conteudo').innerHTML = resp.text();
       });
     
   </script>
