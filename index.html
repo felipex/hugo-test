@@ -7,7 +7,7 @@
 </head>
 <body>
   <div id="conteudo"></div>
-  <div id="conteudohtml" style="border: 1px dashed grey"></div>
+  <div id="conteudohtml" style="border: 1px dashed yellow"></div>
 
   <script>
     const markdown = `
@@ -31,7 +31,8 @@ while (true)
     document.getElementById('conteudo').innerHTML = marked.parse(markdown);
   </script>
   <script>
-    fetch("https://felipex.github.io/hugo-test/tt.html")
+    //fetch("https://felipex.github.io/hugo-test/tt.html")
+    fetch("tt.html")
       .then((resp) => {
         return resp.text();
       })
