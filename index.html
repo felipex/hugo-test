@@ -29,6 +29,15 @@ while (true)
 
     document.getElementById('conteudo').innerHTML = marked.parse(markdown);
   </script>
+  <script>
+    fetch("https://felipex.github.io/README.md")
+      .then((resp) => {
+        document.getElementById('conteudo').innerHTML = resp.text;
+      });
+    
+  </script>
+
+  
 </body>
 </html>
 
